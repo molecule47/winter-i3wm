@@ -1,2 +1,2 @@
 # my-dotfiles-i3wm-
-I minimalist nord look. 
+A minimalist nord look. 
