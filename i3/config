@@ -180,11 +180,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #polybar
-exec_always --no-startup-id sleep 1 && ~/.config/polybar/launch.sh
+exec_always --no-startup-id sleep 1 && #your directory
 
 #wallpaper
-exec_always feh --bg-scale /home/molecule/Downloads/Work/wallpaper/pastel.png
-
+exec_always feh --bg-scale #your directory
 for_window [class="^.*"] border pixel 0
 
 gaps inner 12
