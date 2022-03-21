@@ -1,0 +1,87 @@
+configuration {
+  display-drun: "Applications:";
+  display-window: "Windows:";
+  drun-display-format: "{name}";
+  font: "ShareTechMono-Regular 10";
+  modi: "window,run,drun";
+}
+
+@theme "/dev/null"
+
+* {
+  bg: #1a1c1d;
+  bg-alt: #1E2021;
+
+  fg: #FFFFFF;
+  fg-alt: #5b6366;
+
+  background-color: @bg;
+  radius: 3.0;
+
+  border: 0;
+  margin: 0;
+  padding: 1; 
+  spacing: 0;
+}
+
+window {
+  width: 20%;
+  height: 60%;
+}
+
+element {
+  padding: 8 0;
+  text-color: @fg-alt;
+}
+
+element selected {
+  text-color: @fg;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 40;
+}
+
+entry {
+  background-color: @bg-alt;
+  padding: 12;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+listview {
+  padding: 8 12;
+  background-color: @bg;
+  columns: 1;
+  lines: 8;
+}
+
+mainbox {
+  background-color: @bg;
+  children: [inputbar, listview];
+}
+
+prompt {
+  background-color: @bg-alt;
+  enabled: true;
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+window {
+location:   south west;
+anchor:   south west;
+orientation:   horizontal;
+children:   [mainbox];
+x-offset:   53px;        
+y-offset:   -43px;
+}
