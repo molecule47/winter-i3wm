@@ -1,4 +1,4 @@
-# my-dotfiles-i3wm-
+# my-i3wm
 A minimalist dark-elegant look. 
 
 dots coming soon
